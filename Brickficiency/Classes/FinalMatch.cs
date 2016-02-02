@@ -48,8 +48,8 @@ namespace Brickficiency.Classes {
             this.xml = "";
         }
 
-        public void AddItem(string id, int qty, decimal price) {
-            itemDictionary.Add(id, new StoreItem(qty, price));
+        public void AddItem(string id, int qty, decimal price, string colour) {
+            itemDictionary.Add(id, new StoreItem(qty, price, colour));
             totalStorePrice += price * qty;
         }
 
